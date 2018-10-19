@@ -6,8 +6,7 @@ export function htmlToState(html, dados) {
     htmlToStyle: (nodeName, node, currentStyle) => {
       if (nodeName === "b") return currentStyle.add("BOLD");
       if (nodeName === "i") return currentStyle.add("ITALIC");
-      if (nodeName === "big") return currentStyle.add("BIG");
-      if (nodeName === "small") return currentStyle.add("SMALL");
+      if (nodeName === "font") return currentStyle.add(["SIZE", node.getAttribute("size") || "2"].join(""));
       return currentStyle;
     },
     htmlToBlock: (nodeName, node) => {

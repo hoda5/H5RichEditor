@@ -9,6 +9,7 @@
     "babel-polyfill": "6.26.0",
     "draft-convert": "2.1.4",
     "draft-js": "0.10.5",
+    "pdfmake": "^0.1.38",
     "react": "16.5.2",
     "react-dom": "16.5.2",
     "react-scripts": "2.0.5"

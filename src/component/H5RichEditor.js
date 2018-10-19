@@ -164,10 +164,22 @@ function getBlockStyle(block) {
 }
 
 const styleMap = {
-  BIG: {
+  SIZE1: {
+    fontSize: "50%",
+  },
+  SIZE2: {
+    fontSize: "75%",
+  },
+  SIZE3: {
+    fontSize: "100%",
+  },
+  SIZE4: {
     fontSize: "150%",
   },
-  SMALL: {
-    fontSize: "75%",
+  SIZE5: {
+    fontSize: "175%",
+  },
+  SIZE6: {
+    fontSize: "200%",
   },
 };

@@ -13,11 +13,23 @@ const toHTML = convertToHTML({
     if (style === "ITALIC") {
       return <i />;
     }
-    if (style === "BIG") {
-      return <big />;
+    if (style === "SIZE1") {
+      return <font size="1" />;
     }
-    if (style === "SMALL") {
-      return <small />;
+    if (style === "SIZE2") {
+      return <font size="2" />;
+    }
+    if (style === "SIZE3") {
+      return <font size="3" />;
+    }
+    if (style === "SIZE4") {
+      return <font size="4" />;
+    }
+    if (style === "SIZE5") {
+      return <font size="5" />;
+    }
+    if (style === "SIZE6") {
+      return <font size="6" />;
     }
   },
   blockToHTML: block => {

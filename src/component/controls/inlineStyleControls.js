@@ -41,9 +41,13 @@ class FontSizeButton extends React.Component {
             icon="font"
             onClick={() => {
                 const currentStyle = editorState.getCurrentInlineStyle();
-                if (currentStyle.has("BIG")) onApplyStyles(["BIG"], ["SMALL"]);
-                else if (currentStyle.has("SMALL")) onApplyStyles(["BIG", "SMALL"], []);
-                else onApplyStyles(["SMALL"], ["BIG"]);
+                const remove=["SIZE1", "SIZE2", "SIZE3", "SIZE4", "SIZE5", "SIZE6"];
+                if (currentStyle.has("SIZE1")) onApplyStyles(remove, ["SIZE2"]);
+                else if (currentStyle.has("SIZE2")) onApplyStyles(remove, []);
+                else if (currentStyle.has("SIZE4")) onApplyStyles(remove, ["SIZE5"]);
+                else if (currentStyle.has("SIZE5")) onApplyStyles(remove, ["SIZE6"]);
+                else if (currentStyle.has("SIZE6")) onApplyStyles(remove, ["SIZE1"]);
+                else onApplyStyles(remove, ["SIZE4"]);
             }}
             textStyle="FONT"
         />
