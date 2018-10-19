@@ -23,3 +23,16 @@ const dadosPaciente = {
 }  
 ```       
           
+Para imprimir com PDFmake
+```javascript
+let valor_em_pdfmake = htmlToPdfMake(valor_em_html, dadosPaciente)
+
+function imprimirPDF() {
+  const dd = {
+    content: valor_em_pdfmake
+  };
+  pdfMake.createPdf(dd).print();
+}
+
+  
+```
